@@ -1,0 +1,29 @@
+MENU.NM	: name of menu
+MENU.NUM : identification of menu
+MENU.UNITPRICE : unit price of menu
+MENU.CNT : quantity of menu
+MENU.DISCOUNTPRICE : discounted price of menu
+MENU.PRICE : total price of menu
+MENU.ITEMSUBTOTAL : price of each menu after discount applied
+MENU.VATYN : whether the price includes tax or not
+MENU.ETC : others
+MENU.SUB.NM : name of submenu
+MENU.SUB.UNITPRICE : unit price of submenu
+MENU.SUB.CNT : quantity of submenu
+MENU.SUB.PRICE : total price of submenu
+VOID_MENU.NM : name of menu
+VOID_MENU.PRICE : total price of menu
+SUB_TOTAL.SUBTOTAL_PRICE : subtotal price
+SUB_TOTAL.DISCOUNT_PRICE : discounted price in total
+SUB_TOTAL.SERVICE_PRICE ：service charge
+SUB_TOTAL.OTHERSVC_PRICE ：added charge other than service charge
+SUB_TOTAL.TAX_PRICE ：tax amount
+SUB_TOTAL.ETC ：others
+TOTAL.TOTAL_PRICE ：total price
+TOTAL.TOTAL_ETC : others
+TOTAL.CASHPRICE : amount of price paid in cash
+TOTAL.CHANGEPRICE : amount of change in cash
+TOTAL.CREDITCARDPRICE : amount of price paid in credit/debit card
+TOTAL.EMONEYPRICE : amount of price paid in emoney, point
+TOTAL.MENUTYPE_CNT : total count of type of menu
+TOTAL.MENUQTY_CNT : total count of quantity
