@@ -145,10 +145,10 @@ python postprocess_sroie.py
 ## BibTex
 If you find our work useful for your research and applications, please cite using the BibTeX:
 ```
-@article{SAIL
+@inproceedings{SAIL
   title={SAIL: Sample-Centric In-Context Learning for Document Information Extraction},
-  author={Jinyu Zhang, Zhiyuan You, Jize Wang, Xinyi Le},
-  journal={AAAI},
+  author={Zhang, Jinyu and You, Zhiyuan and Wang, Jize and Le, Xinyi},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
   year={2025}
 ```
 
