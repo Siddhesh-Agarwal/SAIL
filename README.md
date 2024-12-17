@@ -142,4 +142,14 @@ python postprocess_sroie.py
 ## Results
 ![result](./fig/mainresult.png)
 
+## BibTex
+If you find our work useful for your research and applications, please cite using the BibTeX:
+```
+@article{SAIL
+  title={SAIL: Sample-Centric In-Context Learning for Document Information Extraction},
+  author={Jinyu Zhang, Zhiyuan You, Jize Wang, Xinyi Le},
+  journal={AAAI},
+  year={2025}
+```
+
 
