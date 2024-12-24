@@ -1,4 +1,5 @@
 # SAIL: Sample-Centric In-Context Learning for Document Information Extraction
+<a href='https://arxiv.org/abs/2412.17092'><img src='https://img.shields.io/badge/Paper-PDF-red'></a>
 
 ## Table of contents
 - [Getting Started](#getting-started)
