@@ -1,9 +1,9 @@
-from typing import List
+from typing import List, Optional
 import cv2
 import numpy as np
 
 
-def projection_by_bboxes(boxes: np.array, axis: int) -> np.ndarray:
+def projection_by_bboxes(boxes: np.ndarray, axis: int) -> np.ndarray:
     """
      通过一组 bbox 获得投影直方图，最后以 per-pixel 形式输出
 
@@ -25,17 +25,17 @@ def projection_by_bboxes(boxes: np.array, axis: int) -> np.ndarray:
 
 
 # from: https://dothinking.github.io/2021-06-19-%E9%80%92%E5%BD%92%E6%8A%95%E5%BD%B1%E5%88%86%E5%89%B2%E7%AE%97%E6%B3%95/#:~:text=%E9%80%92%E5%BD%92%E6%8A%95%E5%BD%B1%E5%88%86%E5%89%B2%EF%BC%88Recursive%20XY,%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%88%92%E5%88%86%E6%AE%B5%E8%90%BD%E3%80%81%E8%A1%8C%E3%80%82
-def split_projection_profile(arr_values: np.array, min_value: float, min_gap: float):
+def split_projection_profile(arr_values: np.ndarray, min_value: float, min_gap: float):
     """Split projection profile:
 
     ```
-                              ┌──┐
-         arr_values           │  │       ┌─┐───
-             ┌──┐             │  │       │ │ |
-             │  │             │  │ ┌───┐ │ │min_value
-             │  │<- min_gap ->│  │ │   │ │ │ |
-         ────┴──┴─────────────┴──┴─┴───┴─┴─┴─┴───
-         0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+                            ┌──┐
+        arr_values          │  │       ┌─┐ ┐
+            ┌──┐            │  │       │ │ |
+            │  │            │  │ ┌───┐ │ │min_value
+            │  │<- min_gap->│  │ │   │ │ │ |
+        ────┴──┴────────────┴──┴─┴───┴─┴─┴─┴────
+        0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
     ```
 
     Args:
@@ -146,7 +146,7 @@ def bbox2points(bbox):
     return [left, top, right, top, right, bottom, left, bottom]
 
 
-def vis_polygon(img, points, thickness=2, color=None):
+def vis_polygon(img, points, thickness: int, color: cv2.typing.Scalar):
     br2bl_color = color
     tl2tr_color = color
     tr2br_color = color
